@@ -20,7 +20,7 @@ jobs:
             - name: show what is the version of python,docker ,etc
               run: docker --version && python --version
             - name: update the file 
-              run: sudp apt-get update
+              run: sudo apt-get update
 
 
           
