@@ -1,0 +1,15 @@
+name: Hello Word
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+    greets:
+        runs-on: ubuntu-latest
+        steps:
+            - name: say hello
+              run: echo "hello"
+
+            - name: say hello to every everyone
+              run: echo "hello evryone"
