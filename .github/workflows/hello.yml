@@ -21,6 +21,15 @@ jobs:
               run: docker --version && python --version
             - name: update the file 
               run: sudo apt-get update
+    test:
+      runs-on: ubuntu-latest
+      steps:
+          - name: show the date and time
+            run: data
+          - name: print branch name 
+            run: echo " branch name is ${{github.ref_name}}
+          - name: list of repo 
+            run: ls -la
 
 
           
