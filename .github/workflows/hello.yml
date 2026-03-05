@@ -21,8 +21,8 @@ jobs:
               run: docker --version && python --version
             - name: update the file 
               run: sudo apt-get update
-      depends-on:
-            greets:
+        needs: 
+            - greets
     test:
       runs-on: ubuntu-latest
       steps:
