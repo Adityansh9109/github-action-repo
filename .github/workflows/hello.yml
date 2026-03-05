@@ -25,7 +25,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
           - name: show the date and time
-            run: data
+            run: date
           - name: print branch name 
             run: echo " branch name is ${{github.ref_name}}
           - name: list of repo 
