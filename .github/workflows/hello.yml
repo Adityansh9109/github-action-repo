@@ -32,6 +32,12 @@ jobs:
             run: echo "branch name is ${{github.ref_name}}"
           - name: list of repo 
             run: ls -la
+    file:
+      runs-on: ubuntu-latest
+      steps:
+          - uses: actions/checkout@v4
+          - name : create file
+            run : touch.sh
 
 
           
