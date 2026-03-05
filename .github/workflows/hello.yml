@@ -37,7 +37,8 @@ jobs:
       steps:
           - uses: actions/checkout@v4
           - name : create file
-            run : touch.sh
-
+            run : touch file.sh
+      needs:
+          - details 
 
           
